@@ -39,8 +39,8 @@ public class YearInReviewViewsController {
 
     @GetMapping("/year/{year}")
     public void getViewsForYear(@PathVariable("year") String year) throws IOException {
-       //  repository.getViewsForYear(Integer.valueOf(year));
-        repository.retrieveMultipleItemsBatchGet();
+        repository.getViewsForYear(Integer.valueOf(year));
+        //repository.retrieveMultipleItemsBatchGet();
     }
 
 
